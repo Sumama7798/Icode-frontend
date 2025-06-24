@@ -1,0 +1,15 @@
+
+  
+  .card-item:nth-child(1) .card-image{
+    height:300px;
+    width:400px;
+  }
+  
+  .card-item:nth-child(2) .card-image{
+    height:400px;
+    width:500px;;
+  }
+  
+
+  
+  

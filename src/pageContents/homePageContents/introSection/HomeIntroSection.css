@@ -1,0 +1,27 @@
+.intro {
+    background-image: url(Images);
+   
+}
+.img-slider-img {
+    
+    object-fit: fill;  
+    display: block;
+    transition:transform 0.5s;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.img-slider-btn {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    bottom:0;
+    display: block;
+    padding: 2rem;
+    transition: color 0.3s;
+    
+}
+
+.img-slider-btn:hover {
+    color: gray;
+}

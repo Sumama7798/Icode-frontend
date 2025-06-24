@@ -1,0 +1,21 @@
+.navbar {
+    
+    height: 60px;
+       
+}
+
+li {
+    font-size: 1.2rem;
+    color: white;
+    font-family: sans-serif;
+   
+    
+}
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.icon {
+   justify-content: start;
+}
