@@ -22,7 +22,7 @@ const BlogSection = () => {
     
 
   return (
-    <div className='h-full pt-20 pb-36 justify-center bg-[rgb(44,44,44)]'>
+    <div className='h-full pt-20 pb-36 justify-center px-5 bg-[rgb(44,44,44)]'>
                 
                 {/* Heading */}
             
