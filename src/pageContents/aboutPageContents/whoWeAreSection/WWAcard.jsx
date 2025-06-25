@@ -8,21 +8,24 @@ const WWACrad = ({ wwacard, index }) => {
 
     return (
         <div className="m-auto flex flex-col items-center sm:space-x-[500px] sm:flex-row text-4xl text-white">
-            <motion.img
-                variants={fadeIn('up', 0.3, 0.3)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.3 }}
-                src={image}
-                alt={heading || 'service image'}
-                className={`card-image relative left-4 sm:absolute flex justify-center mx-auto 
-                rounded-2xl fill-inherit shadow-md shadow-black 
-                ${
-                    index % 2 === 1
-                        ? 'sm:h-[350px] sm:w-[500px] sm:ml-[130px]'
-                        : 'sm:h-[300px] sm:w-[400px] sm:ml-[260px]'
-                } h-[204px] w-[304px]`}
-            />
+            <div className="flex flex-col sm:block items-center gap-8">
+  <motion.img
+    variants={fadeIn('up', 0.3, 0.3)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.3 }}
+    src={image}
+    alt={heading || 'service image'}
+    className={`card-image relative sm:absolute mx-auto 
+      rounded-2xl shadow-md shadow-black
+      ${
+        index % 2 === 1
+          ? 'sm:h-[350px] sm:w-[500px] sm:ml-[130px]'
+          : 'sm:h-[300px] sm:w-[400px] sm:ml-[260px]'
+      } 
+      h-[200px] w-[300px]`}
+  />
+</div>
             <div className="flex-col">
                 <motion.h1
                 variants={fadeIn('up', 0.3, 0.3)}
