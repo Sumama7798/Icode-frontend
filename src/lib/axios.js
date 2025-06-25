@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL:`https://icode-backend-nine.vercel.app/api` ,
+    baseURL:`icode-backend-production.up.railway.app/api` ,
     withCredentials: true,
 });
 

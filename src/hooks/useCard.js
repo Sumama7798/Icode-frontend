@@ -7,7 +7,7 @@ export const useCard = create((set, get) => ({
 
   getCardsByAdress: async (page, section) => {
     try {
-      const response = await axios.get(`/cards/getCardsByAdress/${page}/${section}`);
+      const response = await axios.get(`/getCardsByAdress/${page}/${section}`);
       set((state) => ({
         cards: {
           ...state.cards,
