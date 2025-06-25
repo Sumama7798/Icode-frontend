@@ -15,7 +15,7 @@ const WWACrad = ({ wwacard, index }) => {
                 viewport={{ once: true, amount: 0.3 }}
                 src={image}
                 alt={heading || 'service image'}
-                className={`card-image relative left-4 sm:absolute flex justify-center mx-auto 
+                className={`card-image relative left-4 sm:absolute lg:absolute flex justify-center mx-auto 
                 rounded-2xl fill-inherit shadow-md shadow-black 
                 ${
                     index % 2 === 1
