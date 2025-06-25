@@ -23,28 +23,28 @@ const BlogCard = ({BCard}) => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
-            className=' flex text-left text-lg my-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{header}</motion.p>
+            className='line-clamp-1 flex text-left text-lg my-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{header}</motion.p>
 
             <motion.h1
             variants={fadeIn('up', 0.3, 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
-            className='flex text-xl font-bold text-left w-[550px] font-prompt  mx-auto mt-4'>{heading}</motion.h1>
+            className='line-clamp-1 flex text-xl font-bold text-left w-[550px] font-prompt  mx-auto mt-4'>{heading}</motion.h1>
 
             <motion.p
             variants={fadeIn('up', 0.3, 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
-            className=' flex text-left text-lg mt-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{description}</motion.p>
+            className='line-clamp-3 flex text-left text-lg mt-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{description}</motion.p>
 
             <motion.p
             variants={fadeIn('up', 0.3, 0.3)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
-            className=' flex text-left text-lg my-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{footer}</motion.p>
+            className='line-clamp-1 flex text-left text-lg my-4 mx-auto w-[550px]  pt-3 overflow-hidden'>{footer}</motion.p>
 
         </div>
     );
