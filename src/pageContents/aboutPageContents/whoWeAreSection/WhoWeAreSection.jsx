@@ -25,13 +25,7 @@ const WhoWeAreSection = () => {
             {/* Heading */}
         
         
-       <motion.div
-        variants={fadeIn('up', 0.3, 0.3)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}                
-        className='flex flex-col sm:flex-col sm:absolute justify-center mx-auto right-0 sm:mt-12 
-        pb-20  text-5xl text-white font-sans font-semibold'> <h1>Who We Are</h1></motion.div>
+       
         
 
 
