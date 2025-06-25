@@ -2,8 +2,11 @@ import React from 'react'
 import './GetStartedBanner.css'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../../components/animation/Animation'
+import { useNavigate } from 'react-router-dom'
 
 const GetStartedBanner = () => {
+    const navigate = useNavigate()
+
   return (
     <div className='gs-banner flex flex-col h-1/5 justify-center p-10 mx-auto'>
 
@@ -25,7 +28,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        onClick={() => window.location.href = '/contact'} className='bg-black text-white py-3 px-5 rounded-full w-60 hover:bg-zinc-800 ease-in duration-300 '>
+        onClick={() => navigate('/contact')} className='bg-black text-white py-3 px-5 rounded-full w-60 hover:bg-zinc-800 ease-in duration-300 '>
           LET'S GET IN TOUCH
         </motion.button>
         
