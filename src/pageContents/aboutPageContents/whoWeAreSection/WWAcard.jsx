@@ -26,7 +26,7 @@ const WWACrad = ({ wwacard, index }) => {
                         : 'sm:h-[300px] sm:w-[400px] sm:ml-[260px]'
                 } h-[204px] w-[304px]`}
             />
-            <div className="flex-col">
+            <div className="flex-col relative sm:mt-32">
                 <motion.h1
                 variants={fadeIn('up', 0.3, 0.3)}
                 initial="hidden"
