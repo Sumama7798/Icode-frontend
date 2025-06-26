@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { clamp, motion } from 'framer-motion'
 import { fadeIn } from '../../../components/animation/Animation'
 
 const BlogCard = ({BCard}) => {
