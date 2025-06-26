@@ -30,7 +30,7 @@ const WhoWeAreSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}                
-        className='flex flex-col sm:flex-row relative  justify-center mx-auto right-0 sm:mt-12 
+        className='flex flex-col sm:flex-row relative justify-center mx-auto right-0 sm:mt-12 
         pb-10  text-5xl text-white font-sans font-semibold'> <h1>Who We Are</h1></motion.div>
         
 
