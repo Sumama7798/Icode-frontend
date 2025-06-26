@@ -7,7 +7,7 @@ const WWACrad = ({ wwacard, index }) => {
     const { image = 'default-image.jpg', heading = 'No Title', description = 'No description available.' } = wwacard;
 
     return (
-        <div className="m-auto flex flex-col items-center justify-center  sm:flex-row text-4xl text-white">
+        <div className="m-auto flex flex-col items-center sm:space-x-[500px] sm:flex-row text-4xl text-white">
 
             
 
@@ -18,7 +18,7 @@ const WWACrad = ({ wwacard, index }) => {
                 viewport={{ once: true, amount: 0.3 }}
                 src={image}
                 alt={heading || 'service image'}
-                className={`card-image relative left-4 sm:absolute lg:absolute flex justify-center mx-auto 
+                className={`card-image relative left-4 sm:absolute lg:left-0 flex justify-center mx-auto 
                 rounded-2xl fill-inherit shadow-md shadow-black 
                 ${
                     index % 2 === 1
