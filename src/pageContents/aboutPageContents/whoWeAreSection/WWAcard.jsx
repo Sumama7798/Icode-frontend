@@ -7,7 +7,7 @@ const WWACrad = ({ wwacard, index }) => {
     const { image = 'default-image.jpg', heading = 'No Title', description = 'No description available.' } = wwacard;
 
     return (
-        <div className="m-auto flex flex-col items-center sm:space-x-[600px] sm:flex-row text-4xl text-white">
+        <div className="m-auto flex flex-col items-center sm:space-x-[700px] sm:flex-row text-4xl text-white">
 
             
 
