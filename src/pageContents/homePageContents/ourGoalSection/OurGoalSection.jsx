@@ -28,10 +28,10 @@ const OurGoalSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex sm:flex-row lg:flex-row flex-col m-auto text-xl sm:text-2xl 
-        lg:text-2xl font-prompt font-semibold text-white items-center justify-center  
-        mx-auto mb-5'>
-        <p>Our mission is to help businesses launch their MVPs within 4 weeks—reducing time to market, lowering development costs, and ensuring product-market fit from day one</p>
+        className='flex justify-center text-center mx-auto mb-10 text-md text-white font-serif font-semibold'>
+        <p>Our mission is to help businesses launch their MVPs within 4 weeks <br/>
+         reducing time to market, lowering development costs, and <br/>
+          ensuring product-market fit from day one</p>
         </motion.div>
         
         </div>
