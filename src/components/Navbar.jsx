@@ -50,6 +50,10 @@ const Navbar = () => {
           <li>Contact</li>
         </Link>
       </ul>
+
+      <button className='justify-end sm:block bg-black text-white py-2 px-4 rounded-full hover:bg-zinc-800 transition duration-300'>
+        Book a Free Consultation
+      </button>
     </nav>
   );
 };
