@@ -28,7 +28,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        onClick={() => navigate('/contact')} className='bg-black text-white py-3 px-5 rounded-full w-60 hover:bg-zinc-800 ease-in duration-300 '>
+        onClick={() => navigate('/contact')} className='bg-black text-white py-3 px-5 rounded-full w-60 hover:bg-zinc-600 ease-in duration-300 '>
           CLICK HERE
         </motion.button>
         
