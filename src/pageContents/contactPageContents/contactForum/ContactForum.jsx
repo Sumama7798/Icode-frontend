@@ -153,7 +153,7 @@ const ContactForum = () => {
                         name="interestedIn"
                         value={formData.interestedIn}
                         onChange={handleChange}
-                        placeholder='Select a field'
+                        aria-placeholder='Select a field'
                         className="w-full p-4 mt-1 border rounded-md text-black"
                         required
                     >
@@ -169,7 +169,7 @@ const ContactForum = () => {
                     <select
                         name="budget"
                         value={formData.budget}
-                        placeholder="Select a budget range"
+                        aria-placeholder="Select a budget range"
                         onChange={handleChange}
                         className="w-full p-4 mt-1 border rounded-md text-black"
                         required
