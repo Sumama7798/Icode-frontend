@@ -153,10 +153,10 @@ const ContactForum = () => {
                         name="interestedIn"
                         value={formData.interestedIn}
                         onChange={handleChange}
+                        placeholder='Select a field'
                         className="w-full p-4 mt-1 border rounded-md text-black"
                         required
                     >
-                        <option value="">Select a field</option>
                         <option value="Web Development">Web Development</option>
                         <option value="App Development">App Development</option>
                         <option value="UI/UX">UI/UX</option>
@@ -169,11 +169,11 @@ const ContactForum = () => {
                     <select
                         name="budget"
                         value={formData.budget}
+                        placeholder="Select a budget range"
                         onChange={handleChange}
                         className="w-full p-4 mt-1 border rounded-md text-black"
                         required
                     >
-                        <option value="">Select a budget range</option>
                         <option value="$2K–$3K">$2K–$3K</option>
                         <option value="$3K–$10K">$3K–$10K</option>
                         <option value="$10K–$30K">$10K–$30K</option>
