@@ -6,7 +6,7 @@ import FeaturedProjectSection from '../../pageContents/homePageContents/featured
 import AcomplishmentBanner from '../../pageContents/homePageContents/acomplishmentBanner/AcomplishmentBanner.jsx'
 import GetStartedBanner from '../../pageContents/homePageContents/getStartedBanner/GetStartedBanner.jsx'
 import Footer from '../../pageContents/homePageContents/footer/Footer.jsx'
-import OurGoalSection from '../../pageContents/homePageContents/ourGoalSection/ourGoalSection.jsx'
+import OurGoalSection from '../../pageContents/homePageContents/ourGoalSection/OurGoalSection.jsx'
 
 const HomePage = () => {
   return (
