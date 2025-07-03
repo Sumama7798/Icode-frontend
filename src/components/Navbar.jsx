@@ -33,7 +33,7 @@ const Navbar = () => {
         className="icon h-10 w-10 sm:h-24 sm:w-24"
         alt="Logo"
       />
-      <ul className="flex justify-center sm:mr-44 items-center px-3 sm:px-60 space-x-3 sm:space-x-6">
+      <ul className="flex justify-center items-center px-3 sm:px-60 space-x-3 sm:space-x-6">
         <Link to="/">
           <li>Home</li>
         </Link>
