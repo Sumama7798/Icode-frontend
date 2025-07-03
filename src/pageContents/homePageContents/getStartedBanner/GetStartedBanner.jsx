@@ -29,7 +29,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         onClick={() => navigate('/contact')} className='bg-black text-white py-3 px-5 rounded-full w-60 hover:bg-zinc-800 ease-in duration-300 '>
-          LET'S GET IN TOUCH
+          CLICK HERE
         </motion.button>
         
         </div>
