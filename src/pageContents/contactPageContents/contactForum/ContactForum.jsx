@@ -9,7 +9,7 @@ const ContactForum = () => {
         company: '',
         email: '',
         phone: '',
-        interestedIn: [],
+        interestedIn: '',
         budget: '',
         message: '',
     });
@@ -36,7 +36,7 @@ const ContactForum = () => {
                     company: '',
                     email: '',
                     phone: '',
-                    interestedIn: [],
+                    interestedIn: '',
                     budget: '',
                     message: '',
                 });
@@ -151,7 +151,6 @@ const ContactForum = () => {
                     <label className="block text-sm font-medium">Interested In*</label>
                     <select
                         name="interestedIn"
-                        multiple
                         value={formData.interestedIn}
                         onChange={handleChange}
                         className="w-full p-4 mt-1 border rounded-md text-black"
