@@ -18,7 +18,7 @@ const GetStartedBanner = () => {
         className='flex sm:flex-row lg:flex-row flex-col m-auto text-4xl sm:text-6xl 
         lg:text-6xl font-prompt font-semibold text-white items-center justify-center  
         mx-auto mb-5'>          
-        <h1>How can we help you?</h1>        
+        <h1>Book a Free Consultation</h1>        
         </motion.div>
 
         <div className='flex m-auto text-lg font-prompt justify-center items-center pt-5 mx-auto'>

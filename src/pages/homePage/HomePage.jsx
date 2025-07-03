@@ -11,10 +11,10 @@ const HomePage = () => {
   return (
     <div>
     <HomeIntroSection />
+    <GetStartedBanner />
     <HomeServicesSection />
     <FeaturedProjectSection />
     <AcomplishmentBanner bgColor='bg-[rgb(59,59,59)]' />
-    <GetStartedBanner />
     <Footer />
     </div>
   )
