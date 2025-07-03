@@ -1,10 +1,10 @@
 import React from 'react'
 import './HomeIntroSection.css'
 import ImageSlider from './ImageSlider'
+import img1 from '../../../public/images/1.png'
+import img2 from '../../../public/images/2.png'
 
 const HomeIntroSection = () => {
-  const img1 = '../../../public/images/1.png'
-  const img2 = '../../../public/images/2.png'
 
   const Images = [img1, img2]
 
