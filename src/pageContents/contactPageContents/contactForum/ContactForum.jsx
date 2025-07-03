@@ -156,6 +156,7 @@ const ContactForum = () => {
                         className="w-full p-4 mt-1 border rounded-md text-black"
                         required
                     >
+                        <option value="">Select a field</option>
                         <option value="Web Development">Web Development</option>
                         <option value="App Development">App Development</option>
                         <option value="UI/UX">UI/UX</option>
