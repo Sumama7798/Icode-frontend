@@ -1,8 +1,8 @@
 import React from 'react'
 import './HomeIntroSection.css'
 import ImageSlider from './ImageSlider'
-import img1 from '../../../public/images/1.png'
-import img2 from '../../../public/images/2.png'
+import img1 from '../../../assets/images/1.png'
+import img2 from '../../../assets/images/2.png'
 
 const HomeIntroSection = () => {
 
