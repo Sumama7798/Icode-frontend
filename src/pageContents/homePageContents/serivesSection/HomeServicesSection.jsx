@@ -32,7 +32,7 @@ const HomeServicesSection = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='pb-20 text-4xl sm:text-8xl lg:text-8xl text-white font-sans font-semibold'> 
-        <h1>Our Services</h1>
+        <h1>Full-Fledged<br/> Mobile App<br/> Development Services</h1>
         </motion.div>
 
         <motion.div
