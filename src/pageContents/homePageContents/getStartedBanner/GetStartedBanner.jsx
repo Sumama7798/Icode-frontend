@@ -42,7 +42,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-serif font-semibold '>
-          <h1>1,200+</h1> <p className='text-sm font-prompt'>Mobile apps built for diverse industries</p>
+          <h1 className='text-2xl'>1,200+</h1> <p className='text-sm font-prompt'>Mobile apps built for diverse industries</p>
         </motion.div>
 
         <motion.div
@@ -51,7 +51,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-serif font-semibold '>
-          <h1>$500M+</h1> <p className='text-sm font-prompt'>Raised by clients through funding rounds</p>
+          <h1 className='text-2xl'>$500M+</h1> <p className='text-sm font-prompt'>Raised by clients through funding rounds</p>
         </motion.div>
 
         <motion.div
@@ -60,7 +60,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-serif font-semibold '>
-          <h1>12M+</h1> <p className='text-sm font-prompt'>Mobile apps built for diverse industries</p>
+          <h1 className='text-2xl'>12M+</h1> <p className='text-sm font-prompt'>Mobile apps built for diverse industries</p>
         </motion.div>
 
         <motion.div
@@ -69,7 +69,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-serif font-semibold '>
-          <h1>50+</h1> <p className='text-sm font-prompt'>5-Star Reviews on Clutch for Mobile App Development Services</p>
+          <h1 className='text-2xl'>50+</h1> <p className='text-sm font-prompt'>5-Star Reviews on Clutch for Mobile App Development Services</p>
         </motion.div>
         </div>
         
