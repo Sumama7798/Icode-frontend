@@ -20,7 +20,7 @@ const HomeServicesSection = () => {
 
 
   return (
-    <div className="bg-[url('https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+    <div className="bg-[url('https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
      h-full pt-20 pb-36 justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 bg-cover bg-center bg-no-repeat">
             
             {/* Heading */}
