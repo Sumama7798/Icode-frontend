@@ -16,7 +16,7 @@ const OurGoalSection = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex sm:flex-row lg:flex-row flex-col m-auto text-4xl sm:text-6xl 
-        lg:text-6xl font-prompt font-semibold text-white items-center justify-center  
+        lg:text-6xl font-prompt font-semibold text-red-700 items-center justify-center  
         mx-auto mb-5'>          
         <h1>Our Mission</h1>        
         </motion.div>
@@ -28,7 +28,7 @@ const OurGoalSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex justify-center text-center mx-auto mb-10 text-md text-white font-serif font-semibold'>
+        className='flex justify-center text-center mx-auto mb-10 text-md text-red-700 font-serif font-semibold'>
         <p>Our mission is to help businesses launch their MVPs within 4 weeks <br/>
          reducing time to market, lowering development costs, and <br/>
           ensuring product-market fit from day one</p>

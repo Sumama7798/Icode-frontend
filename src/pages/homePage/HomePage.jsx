@@ -13,8 +13,8 @@ const HomePage = () => {
     <div>
     <HomeIntroSection />
     <OurGoalSection />
-    <GetStartedBanner />
     <HomeServicesSection />
+    <GetStartedBanner />
     <FeaturedProjectSection />
     <AcomplishmentBanner bgColor='bg-[rgb(59,59,59)]' />
     <Footer />

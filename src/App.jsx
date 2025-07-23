@@ -14,7 +14,7 @@ function App() {
   
 
   return (
-    <div className="relative min-h-screen bg-[rgb(26,26,26)] text-white  overflow-hidden">
+    <div className="relative min-h-screen bg-white text-black  overflow-hidden">
       
       
     <div className="  ">

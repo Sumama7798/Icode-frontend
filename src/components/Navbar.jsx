@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setBgColor('bg-zinc-900 bg-opacity-80 transition ease-in-out duration-500');
+        setBgColor('bg-red-500 bg-opacity-80 transition ease-in-out duration-500');
       } else {
         setBgColor('bg-transparent transition ease-in-out duration-500');
       }
@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
       </ul>
 
-      <button className='justify-end sm:block bg-slate-400 text-white py-2 px-4 rounded-full hover:bg-zinc-800 transition duration-300'>
+      <button className='justify-end sm:block bg-slate-400 text-white py-2 px-4 rounded-full hover:bg-red-800 transition duration-300'>
         Book a Free Consultation
       </button>
     </nav>

@@ -20,7 +20,8 @@ const HomeServicesSection = () => {
 
 
   return (
-    <div className='main h-full pt-20 pb-36 justify-center'>
+    <div className="bg-[url('https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
+     h-full pt-20 pb-36 justify-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 bg-cover bg-center bg-no-repeat">
             
             {/* Heading */}
         
@@ -30,12 +31,12 @@ const HomeServicesSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex justify-center mx-auto pb-20 text-4xl text-white font-sans font-semibold'> <h1>Our Services</h1>
+        className='flex flex-col justify-center mx-auto pb-20 text-4xl text-white font-sans font-semibold'> <h1>Our Services</h1>
         </motion.div>
 
 
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16  items-centers'>
+        <div className='flex-col grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16  items-centers'>
 
             {cards?.map((servicesCard)=> (
                 <ServicesCrad key={servicesCard._id} servicesCard={servicesCard}/>
