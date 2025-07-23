@@ -8,7 +8,7 @@ const GetStartedBanner = () => {
     const navigate = useNavigate()
 
   return (
-    <div className=' bg-white flex flex-col h-1/5 justify-center p-10 mx-auto'>
+    <div className=' bg-white flex flex-col h-auto justify-center p-10 mx-auto'>
 
         <motion.div
         variants={fadeIn('up', 0.3, 0.3)}
@@ -28,7 +28,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex justify-center text-center mx-auto mb-10 text-md text-red-700 font-serif font-semibold '>
+        className='flex justify-center text-center mx-auto w-[50%] mb-10 text-md text-red-700 font-serif font-semibold '>
           <p>As a leading mobile app development company, we help ambitious entrepreneurs disrupt the ordinary,
              set new benchmarks, and drive innovation through full-fledged mobile app development services.</p>
         </motion.div>
