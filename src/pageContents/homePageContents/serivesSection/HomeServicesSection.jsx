@@ -31,7 +31,7 @@ const HomeServicesSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='pb-20 ml-30 text-2xl sm:text-5xl lg:text-5xl text-white font-sans font-semibold'> 
+        className='pb-20 ml-30 text-2xl sm:text-5xl lg:text-5xl text-white w-[80%] font-sans font-semibold'> 
         <h1>Full-Fledged<br/> Mobile App<br/> Development Services</h1>
         </motion.div>
 
@@ -40,8 +40,8 @@ const HomeServicesSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='text-lg sm:text-xl lg:text-xl text-white font-sans font-semibold'> 
-        <p>ICode is a team of trailblazers, UX-obsessed designers,<br/> and mobile app developers
+        className='text-lg sm:text-xl lg:text-xl text-white font-sans w-[80%] font-semibold'> 
+        <p>ICode is a team of trailblazers,<br/> UX-obsessed designers, and mobile app developers<br/>
             in Pakistan passionate to disrupt the<br/> ordinary and solve real-world problems with innovation.<br/>
             Whether it’s a sleek native app or a scalable cross-platform<br/> application, our mobile app development
             services enable<br/> changemakers to lead, innovate, and transform industries.</p>
