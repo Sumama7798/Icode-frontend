@@ -31,7 +31,7 @@ const ServicesCrad = ({ servicesCard = {} }) => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
-            className='paragraph flex justify-center text-sm mt-4 mx-auto w-[350px] h-60 p-3 overflow-hidden'>{description}
+            className='paragraph flex justify-center text-sm mt-4 mx-auto rounded-sm w-[350px] h-60 p-3 overflow-hidden'>{description}
             </motion.p>
 
         </div>
