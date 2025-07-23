@@ -31,7 +31,7 @@ const HomeServicesSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='pb-20 text-2xl sm:text-5xl lg:text-5xl text-white font-sans font-semibold'> 
+        className='pb-20 mr-10 text-2xl sm:text-5xl lg:text-5xl text-white font-sans font-semibold'> 
         <h1>Full-Fledged<br/> Mobile App<br/> Development Services</h1>
         </motion.div>
 
