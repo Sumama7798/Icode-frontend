@@ -8,7 +8,7 @@ const GetStartedBanner = () => {
     const navigate = useNavigate()
 
   return (
-    <div className=' bg-white flex flex-col h-auto justify-center p-10 mx-auto'>
+    <div className=' bg-white flex flex-col h-full justify-center p-10 mx-auto'>
 
         <motion.div
         variants={fadeIn('up', 0.3, 0.3)}
