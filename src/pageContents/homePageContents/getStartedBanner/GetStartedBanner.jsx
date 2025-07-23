@@ -35,13 +35,13 @@ const GetStartedBanner = () => {
         
         </div>
 
-        <div className='flex-row justify-center grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 items-center'>
+        <div className='flex-row justify-center grid grid-cols-2 text-black sm:grid-cols-4 lg:grid-cols-4 items-center'>
           <motion.div
         variants={fadeIn('up', 0.3, 0.3)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex-col justify-center text-center mx-auto text-black font-prompt font-bold '>
+        className='flex-col justify-center text-center mx-auto  font-prompt font-bold '>
           <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>1,200+</h1> <p className='text-md w-[80%]'>Mobile apps built for diverse industries</p>
         </motion.div>
 
@@ -50,7 +50,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
+        className='flex-col justify-center text-center mx-auto  font-prompt font-bold '>
           <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>$500M+</h1> <p className='text-md w-[80%]'>Raised by clients through funding rounds</p>
         </motion.div>
 
@@ -59,7 +59,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
+        className='flex-col justify-center text-center mx-auto  font-prompt font-bold '>
           <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>12M+</h1> <p className='text-md w-[80%]'>Mobile apps built for diverse industries</p>
         </motion.div>
 
@@ -68,7 +68,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
+        className='flex-col justify-center text-center mx-auto  font-prompt font-bold '>
           <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>50+</h1> <p className='text-md w-[80%]'>5-Star Reviews on Clutch for Mobile App Development Services</p>
         </motion.div>
         </div>
