@@ -16,7 +16,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex sm:flex-row lg:flex-row flex-col m-auto text-4xl sm:text-6xl 
-        lg:text-6xl font-prompt font-semibold text-red-700 items-center justify-center  
+        lg:text-6xl font-prompt font-semibold text-black items-center justify-center  
         mx-auto mb-5'>          
         <h1>We Are The Change Makers!</h1>        
         </motion.div>
@@ -28,7 +28,7 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex justify-center text-center mx-auto w-[50%] mb-10 text-md text-red-700 font-serif font-semibold '>
+        className='flex justify-center text-center mx-auto w-[50%] mb-10 text-md text-black font-serif font-semibold '>
           <p>As a leading mobile app development company, we help ambitious entrepreneurs disrupt the ordinary,
              set new benchmarks, and drive innovation through full-fledged mobile app development services.</p>
         </motion.div>
@@ -41,8 +41,8 @@ const GetStartedBanner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
-          <h1 className='text-4xl pb-5 text-black w-[80%]'>1,200+</h1> <p className='text-sm w-[80%]'>Mobile apps built for diverse industries</p>
+        className='flex-col justify-center text-center mx-auto text-black font-prompt font-bold '>
+          <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>1,200+</h1> <p className='text-md w-[80%]'>Mobile apps built for diverse industries</p>
         </motion.div>
 
         <motion.div
@@ -51,7 +51,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
-          <h1 className='text-4xl pb-5 text-black w-[80%]'>$500M+</h1> <p className='text-sm w-[80%]'>Raised by clients through funding rounds</p>
+          <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>$500M+</h1> <p className='text-md w-[80%]'>Raised by clients through funding rounds</p>
         </motion.div>
 
         <motion.div
@@ -60,7 +60,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
-          <h1 className='text-4xl pb-5 text-black w-[80%]'>12M+</h1> <p className='text-sm w-[80%]'>Mobile apps built for diverse industries</p>
+          <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>12M+</h1> <p className='text-md w-[80%]'>Mobile apps built for diverse industries</p>
         </motion.div>
 
         <motion.div
@@ -69,7 +69,7 @@ const GetStartedBanner = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='flex-col justify-center text-center mx-auto text-red-700 font-prompt font-bold '>
-          <h1 className='text-4xl pb-5 text-black w-[80%]'>50+</h1> <p className='text-sm w-[80%]'>5-Star Reviews on Clutch for Mobile App Development Services</p>
+          <h1 className='text-4xl pb-5 text-red-700 w-[80%]'>50+</h1> <p className='text-md w-[80%]'>5-Star Reviews on Clutch for Mobile App Development Services</p>
         </motion.div>
         </div>
         
