@@ -31,7 +31,20 @@ const HomeServicesSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
-        className='flex flex-col justify-center mx-auto pb-20 text-4xl text-white font-sans font-semibold'> <h1>Our Services</h1>
+        className='flex flex-col justify-center mx-auto pb-20 text-4xl sm:text-8xl lg:text-8xl text-white font-sans font-semibold'> 
+        <h1>Our Services</h1>
+        </motion.div>
+
+        <motion.div
+        variants={fadeIn('up', 0.3, 0.3)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}  
+        className='flex flex-col justify-center mx-auto pb-20 text-2xl sm:text-4xl lg:text-4xl text-white font-sans font-semibold'> 
+        <p>ICode is a team of trailblazers, UX-obsessed designers, and mobile app developers<br/>
+            in Pakistan passionate to disrupt the ordinary and solve real-world problems with innovation.<br/>
+            Whether it’s a sleek native app or a scalable cross-platform application,<br/> our mobile app development
+            services enable changemakers to lead, innovate, and transform industries.</p>
         </motion.div>
 
 
