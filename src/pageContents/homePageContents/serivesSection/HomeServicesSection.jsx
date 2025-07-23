@@ -41,10 +41,10 @@ const HomeServicesSection = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}  
         className='justify-center text-lg sm:text-xl lg:text-xl text-white font-sans font-semibold'> 
-        <p>ICode is a team of trailblazers, UX-obsessed designers, and mobile app developers<br/>
-            in Pakistan passionate to disrupt the ordinary and solve real-world problems with innovation.<br/>
-            Whether it’s a sleek native app or a scalable cross-platform application,<br/> our mobile app development
-            services enable changemakers to lead, innovate, and transform industries.</p>
+        <p>ICode is a team of trailblazers, UX-obsessed designers,<br/> and mobile app developers
+            in Pakistan passionate to disrupt the<br/> ordinary and solve real-world problems with innovation.<br/>
+            Whether it’s a sleek native app or a scalable cross-platform<br/> application, our mobile app development
+            services enable<br/> changemakers to lead, innovate, and transform industries.</p>
         </motion.div>
 
         </div>
