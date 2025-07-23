@@ -49,7 +49,7 @@ const HomeServicesSection = () => {
 
 
 
-        <div className='flex-col grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16  items-centers'>
+        <div className='flex-col grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers'>
 
             {cards?.map((servicesCard)=> (
                 <ServicesCrad key={servicesCard._id} servicesCard={servicesCard}/>
