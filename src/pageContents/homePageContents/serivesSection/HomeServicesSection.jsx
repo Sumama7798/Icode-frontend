@@ -25,7 +25,7 @@ const HomeServicesSection = () => {
             
             {/* Heading */}
         
-        <div className='flex flex-col'>
+        <div className='flex flex-col justify-center'>
         <motion.div
         variants={fadeIn('up', 0.3, 0.3)}
         initial="hidden"
