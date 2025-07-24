@@ -8,26 +8,28 @@ const ServicesContent = () => {
   const { id } = useParams();
   const { getCardsByAdress, getCardsForSection } = useCard();
 
+  // Fetch the current list from the store (will update if Zustand is reactive)
+  const cards = getCardsForSection('servicesPage', 'ourServicesSection');
+
+  // Check from state or fallback search in cards
   const [Scard, setScard] = useState(location.state?.Scard || null);
 
   useEffect(() => {
-    if (!Scard && id) {
-      const loadCard = async () => {
-        // Fetch cards if not already available
-        let cards = getCardsForSection('servicesPage', 'ourServicesSection');
+    const loadCard = async () => {
+      if (!cards.length) {
+        await getCardsByAdress('servicesPage', 'ourServicesSection');
+      }
+    };
 
-        if (!cards.length) {
-          await getCardsByAdress('servicesPage', 'ourServicesSection');
-          cards = getCardsForSection('servicesPage', 'ourServicesSection');
-        }
+    loadCard();
+  }, [cards.length, getCardsByAdress]);
 
-        const found = cards.find((card) => card._id === id);
-        setScard(found || null);
-      };
-
-      loadCard();
+  useEffect(() => {
+    if (!Scard && id && cards.length) {
+      const found = cards.find((card) => card._id === id);
+      setScard(found || null);
     }
-  }, [Scard, id, getCardsByAdress, getCardsForSection]);
+  }, [cards, id, Scard]);
 
   if (!Scard) {
     return (
