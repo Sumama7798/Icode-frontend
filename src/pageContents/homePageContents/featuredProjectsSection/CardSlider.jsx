@@ -21,9 +21,9 @@ const CardSlider = ({ cards }) => {
   }, [cards.length]);
 
   return (
-    <div className="relative w-full max-w-[500px] h-[420px] mx-auto overflow-hidden">
+    <div className="relative w-full max-w-[500px] h-[450px] mx-auto overflow-hidden">
       <div
-        className="flex transition-transform duration-500 ease-in-out w-full h-full"
+        className="flex transition-transform duration-500 ease-in-out h-full"
         style={{
           width: `${cards.length * 100}%`,
           transform: `translateX(-${currentIndex * 100}%)`,
@@ -32,7 +32,7 @@ const CardSlider = ({ cards }) => {
         {cards.map((card) => (
           <div
             key={card._id}
-            className="flex-shrink-0 flex-grow-0 w-full h-full px-2"
+            className="w-full h-full flex-shrink-0 flex-grow-0 px-2"
             style={{ flexBasis: '100%' }}
           >
             <ProjectCard projectsCard={card} />

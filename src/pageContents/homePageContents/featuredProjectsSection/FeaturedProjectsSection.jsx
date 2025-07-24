@@ -18,7 +18,6 @@ const FeaturedProjectSection = () => {
   return (
     <div className='fp-main h-full pt-20 pb-2 px-5 mb-auto mx-auto justify-center items-center'>
 
-      {/* Heading */}
       <motion.div
         variants={fadeIn('up', 0.3, 0.3)}
         initial="hidden"
@@ -29,7 +28,6 @@ const FeaturedProjectSection = () => {
         <h1>Featured Projects</h1>
       </motion.div>
 
-      {/* Slider */}
       <div className="pt-5 pb-10">
         {cards.length > 0 && <CardSlider cards={cards} />}
       </div>
