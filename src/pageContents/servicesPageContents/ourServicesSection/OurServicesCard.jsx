@@ -8,7 +8,7 @@ const OurServicesCard = ({ Scard, index }) => {
     const dynamicFlexDirection = index % 2 === 1 ? 'flex-row-reverse' : 'flex-row'; // Flip flex direction for even index
 
     return (
-        <div className={`m-auto flex ${dynamicFlexDirection} items-center sm:space-x-[100px] justify-center text-4xl text-white`}>
+        <div className={`m-auto flex ${dynamicFlexDirection} items-center sm:space-x-[100px] justify-center text-4xl text-black`}>
             {/* The image */}
             <motion.img
                 variants={fadeIn('up', 0.3, 0.3)}

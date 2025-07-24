@@ -7,7 +7,7 @@ const BlogCard = ({BCard}) => {
     description = 'No description available.',header ='No Header', footer = 'No Footer' } = BCard;
 
     return (
-        <div className='m-auto text-4xl text-white max-h-[600px]'>
+        <div className='m-auto text-4xl text-black max-h-[600px]'>
             <motion.img
                 variants={fadeIn('up', 0.3, 0.3)}
                 initial="hidden"

@@ -30,7 +30,7 @@ const OurServicesSection = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}  
             className='flex flex-col sm:flex-row relative justify-center mx-auto  
-          pb-10  text-5xl text-white font-sans font-bold'> <h1>Our Services</h1>
+          pb-10  text-5xl text-black font-sans font-bold'> <h1>Our Services</h1>
           
           </motion.div>
 

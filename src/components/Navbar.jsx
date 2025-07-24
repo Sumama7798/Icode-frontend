@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [bgColor, setBgColor] = useState('bg-transparent');
+  const [bgColor, setBgColor] = useState('bg-gray-900');
   const location = useLocation(); // Hook to detect route changes
 
   useEffect(() => {
