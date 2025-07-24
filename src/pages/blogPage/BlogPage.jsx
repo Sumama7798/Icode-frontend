@@ -19,7 +19,7 @@ const BlogPage = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: true, amount: 0.3 }} 
-    className='flex justify-center mx-auto mb-10 text-6xl text-white font-sans font-semibold'>Blogs</motion.h1>
+    className='flex justify-center mx-auto mb-10 text-6xl text-black font-sans font-semibold'>Blogs</motion.h1>
 
     <BlogSection />
     <GetStartedBanner/>

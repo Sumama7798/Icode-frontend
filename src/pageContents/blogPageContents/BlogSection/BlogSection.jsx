@@ -26,8 +26,6 @@ const BlogSection = () => {
                 
                 {/* Heading */}
             
-            
-            <h1 className='flex justify-center text-center mx-auto text-5xl text-black font-sans font-bold'>Blog Section</h1>
     
     
     
