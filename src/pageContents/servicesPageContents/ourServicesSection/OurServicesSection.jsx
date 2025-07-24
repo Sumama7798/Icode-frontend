@@ -55,7 +55,7 @@ const OurServicesSection = () => {
                     }}
                     state={{ SCard }} // Pass BCard as state
                 >
-                        <BlogCard SCard={SCard} />
+                        <OurServicesCard SCard={SCard} />
                     </Link>
                 ))}
               
