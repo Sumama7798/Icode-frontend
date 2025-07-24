@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
       </ul>
 
-      <button className='justify-end sm:block bg-gray-900 text-white py-2 px-4 rounded-full hover:bg-red-800 transition duration-300'>
+      <button className='justify-end sm:block bg-black text-white py-2 px-4 rounded-full hover:bg-red-800 transition duration-300'>
         Book a Free Consultation
       </button>
     </nav>
