@@ -46,7 +46,7 @@ const OurServicesSection = () => {
   
   
   
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers hover:bg-red-700 transition-transform duration-300 ease-in-out'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers'>
   
               {cards?.map((Scard) => (
                     <Link
