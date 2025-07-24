@@ -16,15 +16,19 @@ const CardSlider = ({ cards }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       showNext();
-    }, 5000); // Auto slide every 5 seconds
-
+    }, 5000);
     return () => clearInterval(interval);
   }, [cards.length]);
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
-      <div className="flex transition-transform duration-500 ease-in-out"
-           style={{ transform: `translateX(-${currentIndex * 100}%)`, width: `${cards.length * 100}%` }}>
+    <div className="relative w-full overflow-hidden max-w-[500px] mx-auto">
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{
+          width: `${cards.length * 100}%`,
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
         {cards.map((card) => (
           <div key={card._id} className="w-full flex-shrink-0 px-2">
             <ProjectCard projectsCard={card} />
@@ -33,10 +37,16 @@ const CardSlider = ({ cards }) => {
       </div>
 
       {/* Navigation Buttons */}
-      <button onClick={showPrev} className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full">
+      <button
+        onClick={showPrev}
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10"
+      >
         <ChevronLeft size={24} />
       </button>
-      <button onClick={showNext} className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full">
+      <button
+        onClick={showNext}
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10"
+      >
         <ChevronRight size={24} />
       </button>
     </div>
