@@ -25,8 +25,8 @@ const OurServicesCard = ({ Scard, index }) => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.3 }}  
-                className=' flex text-left font-prompt text-base   
-                w-[450px] h-28 py-3 '>
+                className=' flex text-left font-prompt text-base  
+                w-[400px] h-28 py-3 '>
                     {description}
                 </motion.p>
 
