@@ -8,6 +8,7 @@ import ContatPage from "./pages/contactPage/ContactPage"
 
 import Navbar from "./components/Navbar"
 import BlogContents from "./pageContents/blogPageContents/BlogContents/BlogContents"
+import ServicesContent from "./pageContents/servicesPageContents/ServicesContent"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogContents />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:id" element={<ServicesContent />} />
         <Route path="/contact" element={<ContatPage />} />
       </Routes>
     </div>
