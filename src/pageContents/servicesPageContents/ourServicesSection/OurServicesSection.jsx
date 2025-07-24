@@ -46,20 +46,20 @@ const OurServicesSection = () => {
   
   
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers'>
-  
-              {cards?.map((Scard) => (
+    
+            {cards?.map((Scard) => (
                     <Link
-                        to={`/services/${Scard._id}`}
-                        state={{ Scard }}
-                        key={Scard._id}
-                    >
-                        <OurServicesCard Scard={Scard} />
+                    key={Scard._id}
+                    to={{
+                        pathname: `/services/${Scard._id}`,
+                    }}
+                    state={{ Scard }} // Pass BCard as state
+                >
+                        <BlogCard Scard={Scard} />
                     </Link>
-
                 ))}
-
-  
-          </div>
+              
+            </div>
   
       </div>
     )
