@@ -21,25 +21,26 @@ const CardSlider = ({ cards }) => {
   }, [cards.length]);
 
   return (
-    <div className="relative w-full max-w-[500px] h-[450px] mx-auto overflow-hidden">
+    <div className="relative w-full max-w-[500px] mx-auto overflow-hidden">
+      {/* Outer slider track */}
       <div
-        className="flex transition-transform duration-500 ease-in-out h-full"
+        className="flex transition-transform duration-500 ease-in-out"
         style={{
-          width: `${cards.length * 100}%`,
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
       >
         {cards.map((card) => (
           <div
             key={card._id}
-            className="w-full h-full flex-shrink-0 flex-grow-0 px-2"
-            style={{ flexBasis: '100%' }}
+            className="w-full flex-shrink-0 px-2"
+            style={{ flex: '0 0 100%' }} // ⚠️ KEY FIX: each slide is exactly 100% of the container
           >
             <ProjectCard projectsCard={card} />
           </div>
         ))}
       </div>
 
+      {/* Buttons */}
       <button
         onClick={showPrev}
         className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full z-10"

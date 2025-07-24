@@ -10,13 +10,11 @@ const ProjectCard = ({ projectsCard = {} }) => {
   return (
     <div className="m-auto text-white w-full h-full flex flex-col items-center justify-start">
       {/* Image container with animation */}
-      <div>
-        <img
-          src={image}
-          alt={heading || 'project image'}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <img
+        src={image}
+        alt={heading || 'project image'}
+        className="w-full h-[300px] object-cover rounded-2xl shadow-md shadow-black"
+      />
 
       <h1>
         {heading}
