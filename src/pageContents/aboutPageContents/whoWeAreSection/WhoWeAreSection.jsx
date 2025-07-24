@@ -31,7 +31,7 @@ const WhoWeAreSection = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}                
         className='flex flex-col sm:flex-row sm:justify-center relative justify-center sm:mt-12 
-        pb-10 text-5xl text-white font-sans font-semibold'> <h1>Who We Are</h1></motion.div>
+        pb-10 text-5xl text-black font-sans font-semibold'> <h1>Who We Are</h1></motion.div>
         
 
 
