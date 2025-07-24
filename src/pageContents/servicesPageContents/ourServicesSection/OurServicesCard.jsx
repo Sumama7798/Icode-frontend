@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../components/animation/Animation';
 
-const OurServicesCard = ({ Scard, index }) => {
-    const { image = 'default-image.jpg', heading = 'No Title', description = 'No description available.' } = Scard;
+const OurServicesCard = ({ Scard }) => {
+    const { heading = 'No Title', description = 'No description available.' } = Scard;
 
 
     return (
