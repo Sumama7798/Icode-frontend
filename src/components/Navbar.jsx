@@ -16,7 +16,7 @@ const Navbar = () => {
       if (window.scrollY > 50) {
         setBgColor('bg-red-500 bg-opacity-80 transition ease-in-out duration-500');
       } else {
-        setBgColor('bg-gray-900 transition ease-in-out duration-500');
+        setBgColor('bg-gray-900');
       }
     };
 
