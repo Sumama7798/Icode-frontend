@@ -51,9 +51,9 @@ const OurServicesSection = () => {
               {cards?.map((Scard) => (
                     <Link
                     key={Scard._id}
-                    // to={{
-                    //     pathname: `/blog/${Scard._id}`,
-                    // }}
+                    to={{
+                        pathname: `/Services/${Scard._id}`,
+                    }}
                     state={{ Scard }} // Pass BCard as state
                 >
                         <OurServicesCard Scard={Scard} />
