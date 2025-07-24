@@ -1,34 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import Footer from '../../homePageContents/footer/Footer';
-import { useCard } from '../../../hooks/useCard'; // Your existing hook
+import { useCard } from '../../../hooks/useCard';
 
 const ServicesContent = () => {
   const location = useLocation();
   const { id } = useParams();
-  const { getCardById, getCardsForSection, getCardsByAdress } = useCard();
+  const { getCardsByAdress, getCardsForSection } = useCard();
 
   const [Scard, setScard] = useState(location.state?.Scard || null);
 
   useEffect(() => {
     if (!Scard && id) {
-      // Load cards if they aren't already available
       const loadCard = async () => {
-        // Ensure the section is populated
-        const cards = getCardsForSection('servicesPage', 'ourServicesSection');
+        // Fetch cards if not already available
+        let cards = getCardsForSection('servicesPage', 'ourServicesSection');
+
         if (!cards.length) {
           await getCardsByAdress('servicesPage', 'ourServicesSection');
+          cards = getCardsForSection('servicesPage', 'ourServicesSection');
         }
 
-        // Try finding the card now
-        const updatedCards = getCardsForSection('servicesPage', 'ourServicesSection');
-        const found = updatedCards.find((card) => card._id === id);
-        setScard(found);
+        const found = cards.find((card) => card._id === id);
+        setScard(found || null);
       };
 
       loadCard();
     }
-  }, [Scard, id, getCardById, getCardsForSection, getCardsByAdress]);
+  }, [Scard, id, getCardsByAdress, getCardsForSection]);
 
   if (!Scard) {
     return (
