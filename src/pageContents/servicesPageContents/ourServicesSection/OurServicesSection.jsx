@@ -49,14 +49,13 @@ const OurServicesSection = () => {
   
               {cards?.map((Scard) => (
                     <Link
-                    key={Scard._id}
-                    to={{
-                        pathname: `/services/${Scard._id}`,
-                    }} //dsd
-                    state={{ Scard }}
-                >
+                        to={`/services/${Scard._id}`}
+                        state={{ Scard }}
+                        key={Scard._id}
+                    >
                         <OurServicesCard Scard={Scard} />
                     </Link>
+
                 ))}
 
   

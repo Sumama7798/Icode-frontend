@@ -4,22 +4,13 @@ import Footer from '../../homePageContents/footer/Footer';
 
 const ServicesContent = () => {
     const location = useLocation();
-    const { Scard } = location.state || {}; // Retrieve the passed state
+    const { Scard } = location.state || {};
 
     const {
         image = 'default-image.jpg',
         heading = 'No Title',
         description = 'No description available.',
     } = Scard;
-
-    // Format the date
-    const formattedDate = createdAt !== 'No date available.'
-        ? new Date(createdAt).toLocaleDateString('en-US', {
-            day: '2-digit',
-            month: 'long',
-            year: 'numeric',
-        })
-        : createdAt;
 
     return (
         <div className="m-auto text-4xl text-white">
