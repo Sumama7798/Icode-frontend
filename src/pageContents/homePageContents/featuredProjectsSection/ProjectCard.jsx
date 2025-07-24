@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../components/animation/Animation';
 
-const ProjectCard = ({ projectsCard = {} }) => {
+const ProjectCard = ({ projectCard = {} }) => {
   const {
     image = 'default-image.jpg',
     heading = 'No Title',
     description = 'No description available.',
-  } = projectsCard;
+  } = projectCard;
 
   return (
     <div className='m-auto text-white w-full h-full flex flex-col items-center justify-start'>
