@@ -1,4 +1,3 @@
-import React from 'react'
 import { useCard } from '../../../hooks/useCard.js'
 import { useEffect } from 'react';
 import OurServicesCard from './OurServicesCard.jsx';
@@ -52,9 +51,9 @@ const OurServicesSection = () => {
                     <Link
                     key={Scard._id}
                     to={{
-                        pathname: `/Services/${Scard._id}`,
-                    }}
-                    state={{ Scard }} // Pass BCard as state
+                        pathname: `/services/${Scard._id}`,
+                    }} //dsd
+                    state={{ Scard }}
                 >
                         <OurServicesCard Scard={Scard} />
                     </Link>
@@ -67,4 +66,4 @@ const OurServicesSection = () => {
     )
 }
 
-export default OurServicesSection
+export default OurServicesSection;
