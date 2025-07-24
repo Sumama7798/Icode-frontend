@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import ProjectCard from './ProjectCard.jsx';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../components/animation/Animation.jsx';
+import CardSlider from './CardSlider.jsx';
 
 const FeaturedProjectSection = () => {
     const { getCardsByAdress, getCardsForSection } = useCard();
@@ -29,13 +30,8 @@ const FeaturedProjectSection = () => {
         <h1>Featured Projects</h1>
         </motion.div>
 
-        <div className='relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:h-1/2 lg:h-1/2
-        mx-auto gap-x-1 gap-y-16 justify-center items-centers pb-5'>
-
-            {cards?.map((projectsCard)=> (
-                <ProjectCard key={projectsCard._id} projectsCard={projectsCard}/>
-            )) }
-          
+        <div className="pt-5 pb-10">
+                {cards.length > 0 && <CardSlider cards={cards} />}
         </div>
 
 
