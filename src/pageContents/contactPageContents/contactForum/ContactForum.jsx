@@ -50,7 +50,7 @@ const ContactForum = () => {
     };
 
     return (
-        <div className="flex flex-col sm:flex-row bg-[rgb(26,26,26)] text-white p-8 mt-20">
+        <div className="flex flex-col sm:flex-row bg-[rgb(26,26,26)] text-white p-8">
             {/* Contact Details */}
             <div className="flex-1 p-4">
                 <motion.h1
