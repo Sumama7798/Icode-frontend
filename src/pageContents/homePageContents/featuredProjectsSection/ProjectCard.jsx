@@ -8,7 +8,7 @@ const ProjectCard = ({ projectsCard = {} }) => {
   } = projectsCard;
 
   return (
-    <div className="m-auto text-white w-full h-full flex flex-col items-center justify-start">
+    <div className="m-auto text-black w-full h-full flex flex-col items-center justify-start">
       {/* Image container with animation */}
       <img
         src={image}
