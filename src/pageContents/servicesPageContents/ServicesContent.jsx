@@ -5,14 +5,14 @@ import Footer from '../../homePageContents/footer/Footer';
 
 const ServicesContent = () => {
   const location = useLocation();
-      const { SCard } = location.state || {}; // Retrieve the passed state
+      const { Scard } = location.state || {}; // Retrieve the passed state
   
       const {
           image = 'default-image.jpg',
           heading = 'No Title',
           description = 'No description available.',
          
-      } = SCard;
+      } = Scard;
 
   return (
     <div className="m-auto text-black">

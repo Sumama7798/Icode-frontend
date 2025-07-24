@@ -47,15 +47,15 @@ const OurServicesSection = () => {
   
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers'>
     
-            {cards?.map((SCard) => (
+            {cards?.map((Scard) => (
                     <Link
-                    key={SCard._id}
+                    key={Scard._id}
                     to={{
-                        pathname: `/services/${SCard._id}`,
+                        pathname: `/services/${Scard._id}`,
                     }}
-                    state={{ SCard }} // Pass BCard as state
+                    state={{ Scard }} // Pass BCard as state
                 >
-                        <OurServicesCard SCard={SCard} />
+                        <OurServicesCard Scard={Scard} />
                     </Link>
                 ))}
               
