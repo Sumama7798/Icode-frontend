@@ -45,14 +45,20 @@ const OurServicesSection = () => {
   
   
   
-          <div className='flex pt-12 flex-col sm:flex-col mx-auto sm:gap-x-1 gap-y-16 top-0 items-centers'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-auto gap-x-1 gap-y-16 items-centers hover:bg-red-700 transition-transform duration-300 ease-in-out'>
   
-              {cards?.map((Scard,index)=> (
-                  <OurServicesCard key={Scard._id} Scard={Scard} index={index} className='card-item'/>
-              )) }
-  
-           
-  
+              {cards?.map((Scard) => (
+                    <Link
+                    key={Scard._id}
+                    to={{
+                        pathname: `/blog/${Scard._id}`,
+                    }}
+                    state={{ Scard }} // Pass BCard as state
+                >
+                        <OurServicesCard Scard={Scard} />
+                    </Link>
+                ))}
+
   
           </div>
   
