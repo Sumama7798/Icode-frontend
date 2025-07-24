@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../components/animation/Animation';
 
-const OurServicesCard = ({ Scard }) => {
-    const { heading = 'No Title', description = 'No description available.' } = Scard;
+const OurServicesCard = ({ SCard }) => {
+    const { heading = 'No Title', description = 'No description available.' } = SCard;
 
 
     return (
