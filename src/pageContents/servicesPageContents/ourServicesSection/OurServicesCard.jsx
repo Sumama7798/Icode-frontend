@@ -7,10 +7,10 @@ const OurServicesCard = ({ Scard, index }) => {
 
 
     return (
-        <div className={`m-auto flex items-center sm:space-x-[100px] justify-center text-4xl text-black`}>
+        <div className={`m-auto flex items-center sm:space-x-[100px] justify-center text-4xl `}>
 
             {/* The text (heading and description) */}
-            <div className='flex-col items-center justify-center p-3 bg-white hover:bg-red-600 hover:text-white transition duration-300 shadow-lg shadow-black rounded-2xl w-[450px] h-[300px]'>
+            <div className='flex-col items-center justify-center p-3 text-black bg-white hover:bg-red-600 hover:text-white transition duration-300 shadow-lg shadow-black rounded-2xl w-[450px] h-[300px]'>
                 <motion.h1
                 variants={fadeIn('up', 0.3, 0.3)}
                 initial="hidden"
