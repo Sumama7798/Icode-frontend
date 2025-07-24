@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const faqData = [
   {
@@ -58,19 +59,30 @@ const FAQSection = () => {
                 )}
               </div>
 
-              {isOpen && (
-                <p className="mt-4 text-sm text-white leading-relaxed">{faq.answer}</p>
-              )}
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="content"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    className="overflow-hidden"
+                  >
+                    <p className="mt-4 text-sm text-white leading-relaxed">{faq.answer}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           );
         })}
       </div>
 
-      <div className="flex justify-center mt-10">
+      {/* <div className="flex justify-center mt-10">
         <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full text-sm tracking-wider uppercase transition duration-300">
           Load More
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
