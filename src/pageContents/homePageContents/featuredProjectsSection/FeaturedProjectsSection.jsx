@@ -23,9 +23,9 @@ const FeaturedProjectSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className='flex justify-center mx-auto mb-20 text-4xl text-black font-sans font-semibold'
+        className='flex justify-center text-center mx-auto mb-20 text-4xl text-black font-sans font-semibold'
       >
-        <h1 className='text-4xl sm:text-6xl lg:text-6xl w-[50%]'>Leading Mobile App Development Company <h1 className='text-red-700'>Building Success Stories</h1> for Ambitious Entrepreneurs</h1>
+        <h1 className='text-4xl sm:text-6xl lg:text-6xl w-[80%]'>Leading Mobile App Development Company <h1 className='text-red-700'>Building Success Stories</h1> for Ambitious Entrepreneurs</h1>
       </motion.div>
 
       <div className="pt-5 pb-10">
