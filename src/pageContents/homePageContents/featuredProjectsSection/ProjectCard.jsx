@@ -11,7 +11,7 @@ const ProjectCard = ({ projectsCard = {} }) => {
   } = projectsCard;
 
   return (
-    <div className='m-auto text-4xl text-white'>
+    <div className='m-auto text-white w-full h-full flex flex-col items-center justify-start'>
       <motion.img
         variants={fadeIn('up', 0.3, 0.3)}
         initial="hidden"
@@ -19,7 +19,7 @@ const ProjectCard = ({ projectsCard = {} }) => {
         viewport={{ once: true, amount: 0.3 }}
         src={image}
         alt={heading || 'project image'}
-        className='h-[300px] w-full max-w-[480px] object-cover rounded-2xl mx-auto shadow-md shadow-black'
+        className="h-[300px] w-full max-w-[480px] object-cover rounded-2xl shadow-md shadow-black"
       />
 
       <motion.h1
@@ -27,7 +27,7 @@ const ProjectCard = ({ projectsCard = {} }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className='flex text-3xl font-prompt font-bold justify-center mx-auto mt-2'
+        className="text-3xl font-prompt font-bold text-center mt-3"
       >
         {heading}
       </motion.h1>
@@ -37,7 +37,7 @@ const ProjectCard = ({ projectsCard = {} }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className='flex justify-center font-prompt text-sm mt-2 mx-auto w-80 h-auto p-3 overflow-hidden'
+        className="text-sm font-prompt mt-2 px-4 w-[90%] text-center"
       >
         {description}
       </motion.p>
