@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "./pages/homePage/HomePage"
 import AboutPage from "./pages/aboutPage/AboutPage"
-import BlogPage from "./pages/blogPage/BlogPage"
+import CaseStudtyPage from "./pages/caseStudyPage/CaseStudyPage"
 import ServicesPage from "./pages/servicesPage/ServicesPage"
 import ContatPage from "./pages/contactPage/ContactPage"
 
 
 import Navbar from "./components/Navbar"
-import BlogContents from "./pageContents/blogPageContents/BlogContents/BlogContents"
+import CaseStudyContents from "./pageContents/caseStudyPageContents/caseStudyContents/CaseStudyContents"
 import ServicesContent from "./pageContents/servicesPageContents/ServicesContent"
 
 
@@ -25,8 +25,8 @@ function App() {
         
 
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:id" element={<BlogContents />} />
+        <Route path="/case-studies" element={<CaseStudtyPage />} />
+        <Route path="/case-studies/:id" element={<CaseStudyContents />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/:id" element={<ServicesContent />} />
         <Route path="/contact" element={<ContatPage />} />
