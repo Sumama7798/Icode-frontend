@@ -33,8 +33,7 @@ const OurGoalSection = () => {
          reducing time to market, lowering development costs, and <br/>
           ensuring product-market fit from day one</p>
         </motion.div>
-        
-        </div>
+        </div> 
         
         </div>
   )
