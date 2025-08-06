@@ -39,7 +39,6 @@ const CardSlider = ({ cards }) => {
           </div>
         ))}
       </div>
-
       {/* Buttons */}
       <button
         onClick={showPrev}
