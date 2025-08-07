@@ -6,6 +6,7 @@ import LinkedinIcon from './imgs/linkedin.png';
 import ThreadsIcon from './imgs/threads.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../components/animation/Animation';
+import logo from '../../../assets/images/Logo.svg'; // Adjust the path as necessary
 
 const Footer = () => {
   const socialLinks = [
@@ -26,7 +27,7 @@ const Footer = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }} 
-            src="https://assets.zyrosite.com/mv0jZE6zNeiKbo2r/website-YNqJa2ZnkjUPr5Bd.svg"
+            src={logo}
             className="icon h-24 w-24 flex-col"
             alt="Logo"
           />

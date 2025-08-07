@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../assets/images/Logo.svg';
 
 const Navbar = () => {
   const [bgColor, setBgColor] = useState('bg-transparent');
@@ -29,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar fixed top-0 z-50 w-svw sm:w-screen h-15 min-w-auto flex justify-center items-center ${bgColor}`}>
       <img
-        src="https://assets.zyrosite.com/mv0jZE6zNeiKbo2r/website-YNqJa2ZnkjUPr5Bd.svg"
+        src= {logo}
         className="icon h-10 w-10 sm:h-24 sm:w-24"
         alt="Logo"
       />
